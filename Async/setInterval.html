@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<style>
+    body{
+         margin: 0;
+         min-height: 100vh;
+
+        background-image: url("https://c.pxhere.com/photos/e1/3c/vista_landscape_view_nature_scenery_blue_natural_outdoors-608425.jpg!d");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .item1 {
+        margin: 0;
+        padding: 0;
+        width: 800px;
+        height: 400px;
+        box-sizing: border-box;
+        margin-left: 300px;
+        margin-top: 100px;
+        border-radius: 20px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        color: #212121;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid gray; */
+
+    }
+    button{
+        padding: 10px;
+        width: 300px;
+        font-size: medium;
+        overflow: hidden;
+        outline: none;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <div class="item1">
+        <h1>Hello! Friend today we are going to forest...🌲</h1>
+        <button class="start" style="background-color: rgb(118, 213, 118);">Start</button><br>
+        <button class="stop" style="background-color: rgb(224, 99, 99);">Stop</button>
+        <h3 id="message">Console Output...</h3>
+    </div>
+
+</body>
+<Script src="setInterval.js"></Script>
+
+</html>

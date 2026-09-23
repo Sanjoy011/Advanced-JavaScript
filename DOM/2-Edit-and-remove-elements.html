@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and remove elements</title>
+</head>
+<body style="background-color: #212121; color: antiquewhite;">
+    <div>
+        <ul class="language">
+            <li>JavaScript</li>
+        </ul>
+    </div>
+</body>
+<script>
+
+    //First-Method
+    function addLanguage(lang){
+        const li = document.createElement("li")
+        li.innerHTML = `${lang}`;
+        document.querySelector(".language").appendChild(li);
+        console.log(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+
+    //Second-Method
+    function addOptiLanguage(lang){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector(".language").appendChild(li);
+        console.log(li);
+    }
+    addOptiLanguage("Go")
+
+    //And the edit text or replace text
+    const SecondLang = document.querySelector("li:nth-child(4)");
+    // console.log(SecondLang);
+    const newLi = document.createElement("li");
+    newLi.textContent = "React";
+    // console.log(newLi)
+    SecondLang.replaceWith(newLi);
+
+    //Remove Text
+    const removeText = document.querySelector("li:nth-child(4)")
+    removeText.remove();
+</script>
+</html>
+
+
