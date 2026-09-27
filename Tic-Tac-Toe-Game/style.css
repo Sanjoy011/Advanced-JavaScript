@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vmin;
+
+}
+
+.box {
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1rem;
+    margin-top: 25px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d561d7;
+    font-size: medium;
+    color: rgb(17, 18, 19);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 2s, ;
+    /* display: none; */
+}
+
+#reset-btn:hover {
+    background-color: rgb(72, 72, 222);
+    color: aliceblue;
+}
+
+#new-btn {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #b1176c;
+    font-size: medium;
+    color: aliceblue;
+    font-family: san-serif;
+    font-weight: 400;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+}
+
+#new-btn:hover {
+    background-color: rgb(146, 146, 245);
+    color: rgb(17, 18, 19);
+}
+
+#msg {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: san-serif;
+}
+
+
+.header{
+    color: wheat;
+    font-family: san-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.shake {
+    animation: winnerFlash 0.9s ease-in-out 3;
+}
+
+@keyframes winnerFlash {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
+}
